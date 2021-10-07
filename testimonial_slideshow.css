@@ -1,0 +1,90 @@
+.testimonial_slide {
+    display: none;
+}
+
+#testimonial_slider {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+#testimonial_slider .wrapper {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonial {
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(59, 59, 59);
+    
+}
+
+.testimonial_arrow i{
+    font-size: 40px;
+    margin: 50px;
+    color: rgb(236, 236, 236);
+}
+
+#testimonial p {
+    text-align: center;
+    margin: 0px 20px;
+}
+
+#testimonial:before {
+    content: '\f10d';
+    font-family: FontAwesome;
+    color: rgba(105, 91, 91, 0.37);
+    font-size: 40px;
+    margin-left: -20px;
+}
+
+#testimonial:after {
+    content: '\f10e';
+    font-family: FontAwesome;
+    color: rgba(105, 91, 91, 0.37);
+    font-size: 40px;
+    margin-right: -20px;
+    text-align: right;
+    float: right;
+}
+
+.testimonial_slide {
+    border-radius: 20px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }

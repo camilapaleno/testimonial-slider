@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+
+<head>
+    
+    <title>Testimonial Slider</title>
+    <link href="testimonial_slideshow.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ca0213f0.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+
+    <meta property="og:image" content="#"/>
+    <meta name="description" content="">
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content="#" />
+    <meta property="og:description" content="">
+
+
+    
+</head>
+
+<body>
+
+    <div id="testimonial_slider">
+        <div class="wrapper">
+            <button id="testimonial_left" class="testimonial_arrow" onclick="plusDivs(-1)"><i class="fas fa-caret-left"></i></button>
+
+                <div class="testimonial_slide fade" style="background-color: #F58548;">
+                    <div id="testimonial">
+                        <p>1 Some interestin text will go here! Some interestin text will go here!</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial_slide fade" style="background-color: #EEC170;">
+                    <div id="testimonial">
+                        <p>2 Some interestin text will go here! Some interestin text will go here!</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial_slide fade" style="background-color: #A5BC9A;">
+                    <div id="testimonial">
+                        <p>3 Some interestin text will go here! Some interestin text will go here!</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial_slide fade" style="background-color: #F2A65A;">
+                    <div id="testimonial">
+                        <p>4 Some interestin text will go here! Some interestin text will go here!</p>
+                    </div>
+                </div>
+
+            <button id="testimonial_right" class="testimonial_arrow" onclick="plusDivs(+1)"><i class="fas fa-caret-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("testimonial_slide");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+
+    </script>
+
+</body>
+
+
+</html>
